@@ -1,11 +1,12 @@
 Package: rbupkg
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Report Base Unit for Report system.
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: hulilei
+Maintainer: hulilei <hulilei@takewiki.com.cn>
+Description: Report base Unit in the Report system.
+    replace the calculation writen in sql with R.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.1.1
