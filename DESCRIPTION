@@ -1,7 +1,7 @@
 Package: rbupkg
 Type: Package
 Title: Report Base Unit for Report system.
-Version: 0.2.0
+Version: 0.3.0
 Author: hulilei
 Maintainer: hulilei <hulilei@takewiki.com.cn>
 Description: Report base Unit in the Report system.
