@@ -17,3 +17,6 @@ rbu_feeCollection_all_unAllocated_market(variables)
 市场费用待分配
 mrpt2_vw_ds_all_unAllocated_market
 }
+\examples{
+rbu_feeCollection_all_unAllocated_market()
+}

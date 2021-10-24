@@ -14,3 +14,6 @@ rbu_md_costCenter_total()
 成本中心
 mrpt2_vw_md_costCenter_total
 }
+\examples{
+rbu_md_costCenter_total()
+}

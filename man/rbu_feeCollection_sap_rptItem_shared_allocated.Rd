@@ -17,3 +17,6 @@ rbu_feeCollection_sap_rptItem_shared_allocated(variables)
 SAP 凭证费用-分配部分
 mrpt2_vw_data_sap_salesFee_allocated
 }
+\examples{
+rbu_feeCollection_sap_rptItem_shared_allocated()
+}

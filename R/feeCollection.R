@@ -25,6 +25,7 @@ rbu_feeCollection <- function(variables) {
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_all_unAllocated()
 rbu_feeCollection_all_unAllocated <- function(variables) {
 sql <- paste0("CREATE  view  mrpt2_vw_ds_all_unAllocated
  as
@@ -47,6 +48,7 @@ sql <- paste0("CREATE  view  mrpt2_vw_ds_all_unAllocated
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_all_unAllocated_market()
 rbu_feeCollection_all_unAllocated_market  <- function(variables) {
 sql <- paste0("
 create view  mrpt2_vw_ds_all_unAllocated_market
@@ -68,6 +70,7 @@ rbu_feeCollection_all_unAllocated()
 #' @export
 #'
 #' @examples
+#'
 #' rbu_feeCollection_all_unAllocated_withSuperCustomers_brandChannel()
 rbu_feeCollection_all_unAllocated_withSuperCustomers_brandChannel <- function(variables) {
 sql <- paste0("create view mrpt2_vw_ds_all_unAllocated_withSuperCustomers_brandChannel
@@ -298,6 +301,7 @@ rbu_feeCollection_sap <- function(){
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_all()
 rbu_feeCollection_sap_all <- function(variables) {
 
 sql <- paste0(" CREATE  view mrpt2_vw_ds_sap_all
@@ -349,6 +353,7 @@ rbu_feeCollection_sap_rptItem_all_allocated()
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_rptItem_all_allocated()
 rbu_feeCollection_sap_rptItem_all_allocated <- function(variables) {
 sql <- paste0("create view mrpt2_vw_data_sap_rptItem_all_allocated
 as
@@ -374,6 +379,7 @@ rbu_feeCollection_sap_rptItem_shared_allocated()
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_rptItem_all_unique()
 rbu_feeCollection_sap_rptItem_all_unique <- function(){
 sql <- paste0("create view  mrpt2_vw_data_sap_rptItem_all_unique
 as
@@ -395,6 +401,7 @@ where  FAllocateType='独立'   ")
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_rptItem_shared_allocated()
 rbu_feeCollection_sap_rptItem_shared_allocated <- function(variables) {
 
 sql <- paste0("CREATE  view mrpt2_vw_data_sap_salesFee_allocated
@@ -427,6 +434,7 @@ rbu_feeCollection_sap_rptItem_all_shared()
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_rptItem_all_shared()
 rbu_feeCollection_sap_rptItem_all_shared <- function(){
 
 sql <- paste0("Text
@@ -445,6 +453,7 @@ where  FAllocateType='共享'   ")
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_rptItem_all()
 rbu_feeCollection_sap_rptItem_all <- function(){
 sap <- paste0("
               create view mrpt2_vw_data_sap_rptItem_all
@@ -505,6 +514,7 @@ rbu_feeCollection_sap_rptItem_chandoEcom_notnull()
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_rptItem_GeneralOthers_notNull()
 rbu_feeCollection_sap_rptItem_GeneralOthers_notNull <- function(variables) {
 
 sql <- paste0("create view  mrpt2_vw_data_sap_rptItem_GeneralOthers_notNull
@@ -524,6 +534,7 @@ where FRptItemNumber is not null
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_rptItem_GeneralOthers_all()
 rbu_feeCollection_sap_rptItem_GeneralOthers_all <- function(variables) {
 
 sql <- paste0("create view  mrpt2_vw_data_sap_rptItem_GeneralOthers_all
@@ -547,6 +558,7 @@ rbu_md_rptItem()
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_FeeName_generalOthers_notNull()
 rbu_feeCollection_sap_FeeName_generalOthers_notNull <- function(variables) {
 sql <- paste0("create view  mrpt2_vw_data_sap_FeeName_generalOthers_notNull
 as
@@ -565,6 +577,7 @@ where FFeeName is not null  ")
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_FeeName_generalOthers_all()
 rbu_feeCollection_sap_FeeName_generalOthers_all <- function(variables) {
 sql <- paste0("create view  mrpt2_vw_data_sap_FeeName_generalOthers_all
 as
@@ -585,6 +598,7 @@ on a.FCostItemNumber = b.FCostItemNumber and a.FYear =b.FYear and a.FPeriod = b.
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_BrandChannel_GeneralOthers()
 rbu_feeCollection_sap_BrandChannel_GeneralOthers   <- function(variables) {
 
 sql <- paste0("CREATE  view  mrpt2_vw_data_sap_BrandChannel_GeneralOthers
@@ -597,6 +611,15 @@ select * from mrpt2_vw_data_sap_BrandChannel_biorrierYaoFang_other  ")
 }
 
 
+#' Title
+#'
+#' @param variables
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' rbu_feeCollection_sap_BrandChannel_notnull()
 rbu_feeCollection_sap_BrandChannel_notnull <- function(variables) {
 sql <- paste0("create view mrpt2_vw_data_sap_BrandChannel_notnull
 as
@@ -615,6 +638,7 @@ where ftype  is not null   ")
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_BrandChannel_all()
 rbu_feeCollection_sap_BrandChannel_all <- function(variables) {
 sql <- paste0("CREATE    view  mrpt2_vw_data_sap_BrandChannel_all
 as
@@ -641,6 +665,7 @@ rbu_md_costCenter_total()
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_rptItem_chandoEcom_notnull()
 rbu_feeCollection_sap_rptItem_chandoEcom_notnull  <- function(variables) {
 sql <- paste0("create view mrpt2_vw_data_sap_rptItem_chandoEcom_notnull
 as
@@ -659,6 +684,7 @@ where FRptItemNumber is not null  ")
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_rptItem_chandoEcom_all()
 rbu_feeCollection_sap_rptItem_chandoEcom_all <- function(variables) {
 sql <- paste0("create view mrpt2_vw_data_sap_rptItem_chandoEcom_all
 as
@@ -680,6 +706,7 @@ on a.FCostItemNumber =  b.FAcctNumber  ")
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_sap_BrandChannel_chandoEcom()
 rbu_feeCollection_sap_BrandChannel_chandoEcom <- function(variables) {
 sql <- paste0("create view  mrpt2_vw_data_sap_BrandChannel_chandoEcom
 as
@@ -738,6 +765,7 @@ sql <- paste0("  select  *   from mrpt2_vw_ds_bw_all ")
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_bw_all()
 rbu_feeCollection_bw_all    <- function(variables) {
 sql <- paste0("CREATE  view  mrpt2_vw_ds_bw_all
 as
@@ -793,6 +821,7 @@ from  rds_t_mrpt_ds_bw_rpa_ruled ")
 #' @export
 #'
 #' @examples
+#' rbu_feeCollection_bw_rpa_ruled()
 rbu_feeCollection_bw_rpa_ruled <- function(variables) {
 # 这是一个表，应该是BW报表的云计算结果,写入了这个表
 sql <- paste0("rds_t_mrpt_ds_bw_rpa_ruled")
@@ -821,6 +850,15 @@ sql <- paste0("select * from mrpt2_vw_ds_adj_all ")
 }
 
 
+#' Title
+#'
+#' @param variables
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' rbu_feeCollection_adj_all()
 rbu_feeCollection_adj_all <- function(variables) {
 sql <- paste0("create view mrpt2_vw_ds_adj_all
 as

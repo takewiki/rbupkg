@@ -27,6 +27,7 @@ rbu_feeAllcation <- function(variables) {
 #' @export
 #'
 #' @examples
+#' rbu_feeAllcation_all_Allocated()
 rbu_feeAllcation_all_Allocated <- function(variables) {
 sql <- paste0("CREATE  view  mrpt2_vw_ds_all_Allocated
  as
@@ -191,6 +192,7 @@ rbu_feeAllocation_costTotal()
 #' @export
 #'
 #' @examples
+#' rbu_feeAllocation_costTotal()
 rbu_feeAllocation_costTotal <- function(variables) {
 sql <- paste0("  create view vw_mrpt_res_costTotal
   as

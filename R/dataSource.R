@@ -7,6 +7,7 @@
 #' @export
 #'
 #' @examples
+#' rbu_ds_sap()
 rbu_ds_sap <- function(variables) {
 
 sql <- paste0("t_mrpt_data_sap")
@@ -23,6 +24,7 @@ sql <- paste0("t_mrpt_data_sap")
 #' @export
 #'
 #' @examples
+#' rbu_ds_adj()
 rbu_ds_adj <- function(variables) {
 sql <- paste0("t_mrpt_adj")
 

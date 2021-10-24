@@ -12,3 +12,6 @@ rbu_md_costCenter_shared_salesFee()
 \description{
 共享成本中心的渠道费用分配比例
 }
+\examples{
+rbu_md_costCenter_shared_salesFee()
+}

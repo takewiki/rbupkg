@@ -15,3 +15,6 @@ rbu_ds_sap(variables)
 \description{
 t_mrpt_data_sap
 }
+\examples{
+rbu_ds_sap()
+}

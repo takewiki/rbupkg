@@ -17,3 +17,6 @@ rbu_calc_level_ALL_original(variables)
 结果表的处理内容，扣除报表项目为空的问题
 vw_mrpt_res_level_ALL_original
 }
+\examples{
+rbu_calc_level_ALL_original()
+}

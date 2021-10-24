@@ -19,3 +19,6 @@ BW写入的结果表
 这应该是BW核对核法写入的结果
 rds_t_mrpt_ds_bw_rpa_ruled
 }
+\examples{
+rbu_feeCollection_bw_rpa_ruled()
+}

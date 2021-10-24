@@ -16,5 +16,6 @@ rbu_feeCollection_all_unAllocated_withSuperCustomers_brandChannel(variables)
 匹配了品牌渠道费用及品牌渠道基础表
 }
 \examples{
+
 rbu_feeCollection_all_unAllocated_withSuperCustomers_brandChannel()
 }

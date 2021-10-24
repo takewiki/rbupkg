@@ -17,3 +17,6 @@ rbu_feeCollection_sap_BrandChannel_chandoEcom(variables)
 Title
 mrpt2_vw_data_sap_BrandChannel_chandoEcom
 }
+\examples{
+rbu_feeCollection_sap_BrandChannel_chandoEcom()
+}

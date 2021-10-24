@@ -17,3 +17,6 @@ rbu_md_brandChannel(variables)
 基础资料品牌渠道表
 t_mrpt2_md_brandChannel
 }
+\examples{
+rbu_md_brandChannel()
+}

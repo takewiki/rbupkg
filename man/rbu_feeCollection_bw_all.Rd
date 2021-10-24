@@ -17,3 +17,6 @@ rbu_feeCollection_bw_all(variables)
 Title
 mrpt2_vw_ds_bw_all
 }
+\examples{
+rbu_feeCollection_bw_all()
+}

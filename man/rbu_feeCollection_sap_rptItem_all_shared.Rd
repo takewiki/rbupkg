@@ -14,3 +14,6 @@ rbu_feeCollection_sap_rptItem_all_shared()
 SAP凭证共享成本中心费用待分配
 mrpt2_vw_data_sap_rptItem_all_shared
 }
+\examples{
+rbu_feeCollection_sap_rptItem_all_shared()
+}

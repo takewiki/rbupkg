@@ -17,3 +17,6 @@ rbu_feeCollection_all_unAllocated(variables)
 费用归集明细表
 mrpt2_vw_ds_all_unAllocated
 }
+\examples{
+rbu_feeCollection_all_unAllocated()
+}

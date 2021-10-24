@@ -17,3 +17,6 @@ rbu_ds_adj(variables)
 Title
 t_mrpt_adj
 }
+\examples{
+rbu_ds_adj()
+}

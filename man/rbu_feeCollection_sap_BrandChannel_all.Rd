@@ -17,3 +17,6 @@ rbu_feeCollection_sap_BrandChannel_all(variables)
 Title
 mrpt2_vw_data_sap_BrandChannel_all
 }
+\examples{
+rbu_feeCollection_sap_BrandChannel_all()
+}

@@ -17,3 +17,6 @@ rbu_feeCollection_sap_rptItem_chandoEcom_notnull(variables)
 Title
 mrpt2_vw_data_sap_rptItem_chandoEcom_notnull
 }
+\examples{
+rbu_feeCollection_sap_rptItem_chandoEcom_notnull()
+}

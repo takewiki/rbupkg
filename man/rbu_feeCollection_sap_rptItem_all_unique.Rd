@@ -14,3 +14,6 @@ rbu_feeCollection_sap_rptItem_all_unique()
 独占的费用
 mrpt2_vw_data_sap_rptItem_all_unique
 }
+\examples{
+rbu_feeCollection_sap_rptItem_all_unique()
+}

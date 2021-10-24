@@ -5,6 +5,7 @@
 #' @export
 #'
 #' @examples
+#' rbu_md_costCenter_shared_salesFee()
 rbu_md_costCenter_shared_salesFee <- function(){
 
   sql <- paste0("create view mrpt2_vw_md_costCenter_salesFee
@@ -26,6 +27,7 @@ where FValue <> 1  and FType = '渠道'")
 #' @export
 #'
 #' @examples
+#' rbu_md_rptItem()
 rbu_md_rptItem <- function(variables) {
 
 sql <- paste0("t_mrpt_rptItem")
@@ -41,6 +43,7 @@ sql <- paste0("t_mrpt_rptItem")
 #' @export
 #'
 #' @examples
+#' rbu_md_costCenter_total()
 rbu_md_costCenter_total <-function(){
 
 sql <- paste0("create view  mrpt2_vw_md_costCenter_total
@@ -59,6 +62,15 @@ rbu_md_costCenter_salesFee_total()
 }
 
 
+#' Title
+#'
+#' @param variables
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' rbu_md_costCenter_directFee()
 rbu_md_costCenter_directFee <- function(variables) {
 sql <- paste0("create view mrpt2_vw_md_costCenter_directFee
 as
@@ -69,6 +81,15 @@ where FValue = 1  and FType = '渠道'  ")
 
 }
 
+#' Title
+#'
+#' @param variables
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' rbu_md_costCenter_marketFee()
 rbu_md_costCenter_marketFee <- function(variables) {
 sql <- paste0("create view mrpt2_vw_md_costCenter_marketFee
 as
@@ -79,6 +100,15 @@ where FValue = 1  and FType = '市场'  ")
 
 }
 
+#' Title
+#'
+#' @param variables
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' rbu_md_costCenter_salesFee_total()
 rbu_md_costCenter_salesFee_total <- function(variables) {
 sql <- paste0("create view  mrpt2_vw_md_costCenter_salesFee_total
 as
@@ -103,6 +133,7 @@ select * from mrpt2_vw_md_costCenter_salesFee_SpringSummer_total")
 #' @export
 #'
 #' @examples
+#' rbu_md_brandChannel()
 rbu_md_brandChannel <- function(variables) {
 sql <- paste0("t_mrpt2_md_brandChannel")
 

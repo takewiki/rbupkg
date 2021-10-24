@@ -17,3 +17,6 @@ rbu_feeCollection_sap_all(variables)
 1.1.01费用归集SAP凭证
 mrpt2_vw_ds_sap_all
 }
+\examples{
+rbu_feeCollection_sap_all()
+}

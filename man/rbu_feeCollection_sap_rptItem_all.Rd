@@ -12,3 +12,6 @@ rbu_feeCollection_sap_rptItem_all()
 \description{
 1.1.01.03、SAP凭证项目-----------
 }
+\examples{
+rbu_feeCollection_sap_rptItem_all()
+}

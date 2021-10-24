@@ -19,3 +19,6 @@ rbu_feeAllcation_all_Allocated(variables)
 mrpt2_vw_ds_all_Allocated 视图
 mrpt2_t_ds_all_Allocated  表
 }
+\examples{
+rbu_feeAllcation_all_Allocated()
+}

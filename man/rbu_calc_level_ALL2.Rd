@@ -15,3 +15,6 @@ rbu_calc_level_ALL2(variables)
 \description{
 计算结果结果,最接近结果的内容
 }
+\examples{
+rbu_calc_level_ALL2()
+}

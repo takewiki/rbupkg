@@ -1,11 +1,12 @@
 #' 计算结果从明细表到汇总表部分
 #'
-#' @param variables
+#' @param variables 变量
 #'
-#' @return
+#' @return 返回值
 #' @export
 #'
 #' @examples
+#' rbu_calc_level_level1()
 rbu_calc_level_level1 <- function(variables) {
 sql <- paste0("CREATE  view  vw_mrpt_res_level1
  as
@@ -27,6 +28,7 @@ sql <- paste0("CREATE  view  vw_mrpt_res_level1
 #' @export
 #'
 #' @examples
+#' rbu_calc_level_level12()
 rbu_calc_level_level12   <- function(variables) {
 sql <- paste0("create view vw_mrpt_res_level12
 as
@@ -48,6 +50,7 @@ select * from vw_mrpt_res_I03_receive")
 #' @export
 #'
 #' @examples
+#' rbu_calc_level_ALL()
 rbu_calc_level_ALL <- function(variables) {
 sql <- paste0("CREATE view vw_mrpt_res_level_ALL as
 
@@ -65,6 +68,7 @@ group by FYear,FPeriod,FBrand,FChannel,FRptItemNumber,FRptItemName")
 #' @export
 #'
 #' @examples
+#' rbu_calc_level_ALL_original()
 rbu_calc_level_ALL_original   <- function(variables) {
 sql <- paste0("  create view  vw_mrpt_res_level_ALL_original
 as
@@ -73,7 +77,7 @@ where   FRptItemNumber is not null")
 }
 
 
-#' Title
+#' 按报表项目进行张量补全
 #'
 #' @param variables
 #' vw_mrpt_res_level_ALL_zero
@@ -82,6 +86,7 @@ where   FRptItemNumber is not null")
 #' @export
 #'
 #' @examples
+#' rbu_calc_level_ALL_zero()
 rbu_calc_level_ALL_zero   <- function(variables) {
 
   sql <- paste0("create  view vw_mrpt_res_level_ALL_zero
@@ -91,6 +96,15 @@ from vw_mrpt_res_level_ALL_unique a, t_mrpt_rptItem b  ")
 }
 
 
+#' 计算指标I06
+#'
+#' @param variables
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' rbu_calc_level_I06_profit()
 rbu_calc_level_I06_profit <- function(variables) {
 sql <- paste0("create view rds_vw_res_I06_profit
 as
@@ -107,6 +121,15 @@ and a.FChannel = b.FChannel and a.FSubChannel = b.FSubChannel  ")
 
 }
 
+#' 计算指标I07
+#'
+#' @param variables
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' rbu_calc_level_I07_profitRate()
 rbu_calc_level_I07_profitRate <- function(variables) {
 sql <- paste0("create view rds_vw_res_I07_profitRate
 as
@@ -123,6 +146,15 @@ and a.FChannel = b.FChannel and a.FSubChannel = b.FSubChannel  ")
 
 }
 
+#' 计算指标I08
+#'
+#' @param variables
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' rbu_calc_level_I08_salesFee()
 rbu_calc_level_I08_salesFee <- function(variables) {
   sql <- paste0("create view  rds_vw_res_I08_salesFee
 as
@@ -137,6 +169,15 @@ where FRptItemNumber between  'I09' and 'I25'
 group by FYear,FPeriod,FBrand,FChannel,FSubChannel  ")
 }
 
+#' 计算指标I26
+#'
+#' @param variables
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' rbu_calc_level_I26_Salesprofit()
 rbu_calc_level_I26_Salesprofit <- function(variables) {
   sql <- paste0("create view rds_vw_res_I26_Salesprofit
 as
@@ -152,6 +193,15 @@ on a.FYear = b.FYear and a.FPeriod = b.FPeriod and a.FBrand = b.FBrand
 and a.FChannel = b.FChannel and a.FSubChannel = b.FSubChannel  ")
 }
 
+#' 计算指标I27
+#'
+#' @param variables
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' rbu_calc_level_I27_marketFee()
 rbu_calc_level_I27_marketFee <- function(variables) {
   sql <- paste0("create view  rds_vw_res_I27_marketFee
 as
@@ -166,6 +216,15 @@ where FRptItemNumber between  'I28' and 'I43'
 group by FYear,FPeriod,FBrand,FChannel,FSubChannel  ")
 }
 
+#' 计算指标I44
+#'
+#' @param variables
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' rbu_calc_level_I44_marketProfit()
 rbu_calc_level_I44_marketProfit <- function(variables) {
   sql <- paste0("create view rds_vw_res_I44_marketProfit
 as
@@ -194,6 +253,7 @@ and a.FChannel = b.FChannel and a.FSubChannel = b.FSubChannel  ")
 #' @export
 #'
 #' @examples
+#' rbu_calc_level_ALL2()
 rbu_calc_level_ALL2     <- function(variables) {
 sql <- paste0("CREATE  view vw_mrpt_res_level_ALL2
 as
@@ -236,6 +296,7 @@ group by data.FYear,data.FPeriod,data.FBrand,data.FChannel,data.FSubChannel,data
 #' @export
 #'
 #' @examples
+#' rbu_calc_level_ALL3()
 rbu_calc_level_ALL3   <- function(variables) {
 sql <- paste0("create view vw_mrpt_res_level_ALL3
 as
@@ -258,6 +319,7 @@ and a.FRptItemNumber = b.FRptItemNumber  ")
 #' @export
 #'
 #' @examples
+#' rbu_calc_level_ALL4()
 rbu_calc_level_ALL4 <- function(){
 
 # 这一部分应该不再使用

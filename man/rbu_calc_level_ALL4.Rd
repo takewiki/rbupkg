@@ -14,3 +14,6 @@ rbu_calc_level_ALL4()
 计算结果增加了同比数据,19与20年数据
 vw_mrpt_res_level_ALL4
 }
+\examples{
+rbu_calc_level_ALL4()
+}

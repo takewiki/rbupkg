@@ -17,3 +17,6 @@ rbu_feeAllocation_costTotal(variables)
 品牌所有渠道营业成本汇总表
 vw_mrpt_res_costTotal
 }
+\examples{
+rbu_feeAllocation_costTotal()
+}

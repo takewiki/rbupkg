@@ -17,3 +17,6 @@ rbu_feeCollection_sap_BrandChannel_GeneralOthers(variables)
 除自然堂电商的费用
 mrpt2_vw_data_sap_BrandChannel_GeneralOthers
 }
+\examples{
+rbu_feeCollection_sap_BrandChannel_GeneralOthers()
+}

@@ -17,3 +17,6 @@ rbu_feeCollection_sap_rptItem_GeneralOthers_all(variables)
 Title
 mrpt2_vw_data_sap_rptItem_GeneralOthers_all
 }
+\examples{
+rbu_feeCollection_sap_rptItem_GeneralOthers_all()
+}

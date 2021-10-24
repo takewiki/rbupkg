@@ -17,3 +17,6 @@ rbu_feeCollection_sap_FeeName_generalOthers_notNull(variables)
 Title
 mrpt2_vw_data_sap_FeeName_generalOthers_notNull
 }
+\examples{
+rbu_feeCollection_sap_FeeName_generalOthers_notNull()
+}

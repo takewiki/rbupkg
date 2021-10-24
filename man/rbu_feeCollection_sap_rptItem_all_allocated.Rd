@@ -17,3 +17,6 @@ rbu_feeCollection_sap_rptItem_all_allocated(variables)
 SAP费用分配表
 mrpt2_vw_data_sap_rptItem_all_allocated
 }
+\examples{
+rbu_feeCollection_sap_rptItem_all_allocated()
+}

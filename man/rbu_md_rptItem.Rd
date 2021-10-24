@@ -17,3 +17,6 @@ rbu_md_rptItem(variables)
 报表项目基础表
 t_mrpt_rptItem
 }
+\examples{
+rbu_md_rptItem()
+}

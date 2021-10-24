@@ -17,3 +17,6 @@ rbu_calc_level_level12(variables)
 结果表，增加了零售额及回款信息
 使用得不是很规范，
 }
+\examples{
+rbu_calc_level_level12()
+}

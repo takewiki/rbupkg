@@ -17,3 +17,6 @@ rbu_calc_level_ALL3(variables)
 计算结果增加了执行预算数据
 vw_mrpt_res_level_ALL3
 }
+\examples{
+rbu_calc_level_ALL3()
+}

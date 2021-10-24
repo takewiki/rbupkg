@@ -7,11 +7,14 @@
 rbu_calc_level_level1(variables)
 }
 \arguments{
-\item{variables}{}
+\item{variables}{变量}
 }
 \value{
-
+返回值
 }
 \description{
 计算结果从明细表到汇总表部分
+}
+\examples{
+rbu_calc_level_level1()
 }

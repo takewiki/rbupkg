@@ -17,3 +17,6 @@ rbu_calc_level_ALL(variables)
 计算结果表强制为万元
 vw_mrpt_res_level_ALL
 }
+\examples{
+rbu_calc_level_ALL()
+}

@@ -17,3 +17,6 @@ rbu_feeCollection_sap_rptItem_GeneralOthers_notNull(variables)
 除自然堂电商外的内容
 mrpt2_vw_data_sap_rptItem_GeneralOthers_notNull
 }
+\examples{
+rbu_feeCollection_sap_rptItem_GeneralOthers_notNull()
+}
